@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /* ### Primary */
+    --lightRed: #ff5757;
+    --orangeyYellow: #ffb01f;
+    --greenTeal: #00bd91;
+    --cobaltBlue: #1125d4;
+    /* --bgTransparency: 60; */
+    --lightRedBG: #ff575710;
+    --orangeyYellowBG: #ffb01f10;
+    --greenTealBG: #00bd9110;
+    --cobaltBlueBG: #1125d410;
+
+    --lightSlateBlueBackground: hsl(252, 100%, 67%);
+    --lightRoyalBlueBackground: hsl(241, 81%, 54%);
+
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 52px !important;
+}
+
+h2 {
+    font-size: 32px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+}
+
+h4 {
+    font-size: 20px !important;
+}
+p{
+    font-size: 14px;
+}
+
+
+
+main {
+    display: grid;
+    max-width: 95vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.color-lightRed {
+    color: var(--lightRed);
+    background-color: var(--lightRedBG);
+}
+
+.color-orangeyYellow {
+    color: var(--orangeyYellow);
+    background-color: var(--orangeyYellowBG);
+}
+
+.color-greenTeal {
+    color: var(--greenTeal);
+    background-color: var(--greenTealBG);
+}
+
+.color-cobaltBlue {
+    color: var(--cobaltBlue);
+    background-color: var(--cobaltBlueBG);
+}
+
+.circularGradient {
+    background-image: linear-gradient(var(--violetBlueCircle), var(--persianBlueCircle));
+    border-radius: 1000px;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.leftSection{
+background-image: linear-gradient( var(--lightSlateBlueBackground),var(--lightRoyalBlueBackground));
+border-radius: 20px;
+}
+
+button{
+    border-radius: 1100px !important;
+}

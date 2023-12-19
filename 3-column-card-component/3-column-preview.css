@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* PRIMARY */
+--BrightOrange: hsl(31, 77%, 52%);
+--DarkCyan: hsl(184, 100%, 22%);
+--VeryDarkCyan: hsl(179, 100%, 13%);
+/* NEUTRAL
+   @paragraphs */
+--TransparentWhite: hsla(0, 0%, 100%, 0.75);
+/* @background, @headings, @buttons */
+--VeryLightGray: hsl(0, 0%, 95%);
+}
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--VeryLightGray);
+}
+body{
+    background-color: var(--VeryLightGray);
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    color: var(--TransparentWhite);
+    line-height: 180%;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--VeryLightGray);
+    border: solid 2px transparent;
+    border-radius: 50px;
+    color: transparent;
+}
+.b-sed{
+    color: var(--BrightOrange);
+}
+.b-suv{
+    color: var(--DarkCyan);
+}
+.b-lux{
+    color: var(--VeryDarkCyan);
+}
+button:hover{
+    background-color: transparent;
+    border: solid 2px var(--VeryLightGray);
+    transition: all 300ms ease-in-out;
+    color: var(--VeryLightGray);
+}
+.content{
+    margin: 100px 170px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    justify-content: center;
+
+}
+.sedan, .suv, .luxury{
+    padding: 40px;
+}
+.sedan{
+    border-radius: 8px 0 0 8px;
+    background-color: var(--BrightOrange);
+}
+.suv{
+    background-color: var(--DarkCyan);
+}
+.luxury{
+    border-radius: 0 8px 8px 0;
+    background-color: var(--VeryDarkCyan);
+}
+
+@media (max-width:375px) {
+    .content{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    .sedan, .suv, .luxury{
+        padding: 40px;
+    }
+    .sedan{
+        border-radius: 8px 8px 0 0;
+        background-color: var(--BrightOrange);
+    }
+    .suv{
+        background-color: var(--DarkCyan);
+    }
+    .luxury{
+        border-radius: 0 0 8px 8px;
+        background-color: var(--VeryDarkCyan);
+    }
+    
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

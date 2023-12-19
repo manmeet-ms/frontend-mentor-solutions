@@ -1,0 +1,9 @@
+.show-mobile {
+    display: none;
+}
+
+@media (max-width:325px) {
+    .show-mobile {
+        display: block;
+    }
+}

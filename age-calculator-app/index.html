@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="bg-gray-50 flex justify-center items-center">
+    <section class="lg:w-5/12  md:w-3/4 sm:w-3/4 card bg-white flex flex-col w-2/5 p-6 shadow-md">
+      <div class="flex w-5/6">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label  for="name" class="inputLabel leading-7 text-xs tracking-widest uppercase text-gray-600"
+              >Day</label
+              >
+            <input id="iday" type="text" required placeholder="DD" name="name" class="w-full rounded border border-gray-400 focus:border-purple-700 focus:bg-white focus:ring-2 focus:ring-purple-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label  for="name" class="inputLabel leading-7 text-xs tracking-widest uppercase text-gray-600"
+              >Month</label
+              >
+            <input id="imonth" type="text" required placeholder="MM" name="name" class="w-full rounded border border-gray-400 focus:border-purple-700 focus:bg-white focus:ring-2 focus:ring-purple-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="inputLabel leading-7 text-xs tracking-widest uppercase text-gray-600"
+              >Year</label
+              >
+            <input id="iyear" type="text" required placeholder="YYYY" name="name" class="w-full rounded border border-gray-400 focus:border-purple-700 focus:bg-white focus:ring-2 focus:ring-purple-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+          </div>
+        </div>
+      
+      </div>
+      <button onclick="calculateAge()" class="calculateAgeButton" >
+        <span class="border-b-2 border-gray-300" >&nbsp;</span>
+        <span class="border-b-2 border-gray-300" >&nbsp;</span>
+        <span  class="flex w-14 h-14 p-2 justify-center items-center relative left-4 rounded-full bg-purple-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+          
+      </span>
+      </button>
+      <div class="flex flex-col">
+        <h1 class="flex title-font sm:text-4xl text-4xl mb-4 text-gray-900">
+          <span id="o_year"  class="text-purple-700 font-bold">--&nbsp;</span> years
+        </h1>
+        <h1 class="flex title-font sm:text-4xl text-4xl mb-4 text-gray-900">
+          <span id="o_month" class="text-purple-700 font-bold">--&nbsp;</span> months
+        </h1>
+        <h1 class="flex title-font sm:text-4xl text-4xl mb-4 text-gray-900">
+          <span id="o_day" class="text-purple-700 font-bold">--&nbsp;</span> days
+        </h1>
+      </div>
+    </section>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="../tailwind.css.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>

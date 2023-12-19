@@ -1,0 +1,11 @@
+{
+  "name": "advice-generator-web-app-and-notifier",
+  "version": "1.0.0",
+  "description": "Advice Generator - Solution of Frontmentor Challenge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manmeet Singh",
+  "license": "ISC"
+}

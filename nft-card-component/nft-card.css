@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: mont;
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: lmont;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+body{
+    background-color: #0d192b;
+}
+
+*{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    /* line-height: 1.5; */
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+/* .container{
+    display: flex;
+    justify-content: center;
+
+
+} */
+.main{
+    height: 450px;
+    width: 250px;
+    background-color: #14253d;
+    padding: 15px;
+    font-family: lmont;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 1px #0d132c;
+
+}
+.image{
+    margin: 5px 10px 20px 10px;
+}
+.eth{
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.eye{
+    opacity: 0;
+    display: grid;
+    place-items: center;
+    height: 240px;
+    width: 240px;
+    margin-left: 5px;
+    background-color: rgba(0, 255, 255, 0.5);
+    position: absolute;
+    bottom: 47%;
+    z-index: 1;
+
+
+}
+ .eye:hover{
+    opacity: 0.9;
+    transition: 0.5s;
+ }  
+
+h4{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+h4:hover, span:hover{
+    color: #00fff7;
+    transition: 1s;
+}
+.desc{
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.value{
+    font-size: 12px;
+
+}
+
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 25px;
+    margin: 10px auto;
+    
+}
+h5{
+    margin: 8px;
+}
+.ethsvg{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding-left: 2px;
+    letter-spacing: 0.5px;
+}
+.clksvg{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.ftr{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding: 3px auto;
+    border-top: 1px solid #76879886;
+    border-radius: 0;
+    margin: 0;
+}
+.avtr{
+    width: 30px;
+    height: 30px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.cyan{
+    color: #00fff7;
+}
+.gray{
+    color: #88A7D5;
+}
+span{
+    color: #fff;
+}
+
+.attribution { font-size: 11px; text-align: center; color: #fff; }
+.attribution a { color: hsl(228, 68%, 45%); }

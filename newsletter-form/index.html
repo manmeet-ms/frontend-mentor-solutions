@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title> Frontend Mentor | Newsletter sign-up form with success message </title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-900">
+  <!-- Sign-up form start -->
+  <section class="bg-white text-slate-600 body-font p-12 w-2/3 rounded-2xl">
+    <div class="container mx-auto flex md:flex-row flex-col items-center">
+      <div class="pr-10 lg:flex-grow md:w-3/4 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center ">
+        <h1 class="title-font sm:text-5xl text-4xl mb-4 text-slate-900">Stay updated! </h1>
+        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+          <p class="mb-4 leading-relaxed">Join 60,000+ product managers receiving monthly <br> updates on:</p> 
+          <a> <span class="font-xs text-red-100 bg-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> </span>Product discovery and building what matters </a> 
+              <a> <span class="font-xs text-red-100 bg-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center"> <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> </span>Measuring to ensure updates are a success </a> 
+              <a> <span class="font-xs text-red-100 bg-red-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center"> <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                <path  newsletterd="M20 6L9 17l-5-5"></path>
+              </svg> </span> And much more! </a>
+        </nav>
+        <div class="flex flex-col  sm:space-y-4 space-y-4">
+          <div class="mt-8">
+            <div class="flex flex-col">
+              <label for="email" class="leading-7 text-sm font-bold text-slate-900">Email address</label>
+              <input class="bg-slate-50 bg-opacity-25 rounded border border-slate-300 focus:border-red-500 focus:bg-transparent focus:ring-2 focus:ring-red-200 text-base outline-none text-slate-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" type="email" placeholder="email@company.com" id="email" name="email" > </div>  
+            </div>
+            <button class="inline-flex text-white bg-slate-900 border-0 my-4 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-md text-lg">Subscribe to monthly newsletter</button> <!-- <button class="ml-4 inline-flex text-slate-700 bg-slate-100 border-0 py-2 px-6 focus:outline-none hover:bg-slate-200 rounded text-lg">Button</button> -->
+          </div>
+          <div>
+        </div>
+      </div>
+      <div class="">
+        <img class="object-cover object-center rounded" alt="hero" src="/newsletter-form/assets/images/illustration-sign-up-desktop.svg"> 
+      </div>
+    </div>
+  </section> 
+  <!-- Sign-up form start main -->
+  <!-- <main class="flex">
+      <section class="left flex flex-col">
+        <h1 class="">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="flex-col">
+          <span class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg> Product discovery and building what matters </span>
+          <span class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg> Measuring to ensure updates are a success </span>
+          <span class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg> And much more! </span>
+        </div>
+        <input title="Email address" placeholder="email@company.com" name="Email address" label="Email address" type="text" />
+        <button>Subscribe to monthly newsletter</button>
+      </section>
+      <section class="right">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </section>
+    </main> -->
+  
+  <!-- Sign-up form end -->
+  <!-- Success message start -->
+  <!-- Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription. Dismiss message -->
+  <!-- Success message end -->
+  <!-- <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div> -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="../tailwind.css.js"></script>
+</body>
+
+</html>
